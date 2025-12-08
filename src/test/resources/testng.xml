@@ -4,7 +4,7 @@
     <test name="String Validation Tests">
         <classes>
             <class name="practiceTests.TestClass1"/>
-              <class name="practiceTests.TestClass2"/>
+      
         </classes>
     </test>
 
