@@ -35,7 +35,7 @@ public class TestClass1 {
         Assert.assertEquals(actual, expected, "Strings are not equal!");
     }
 
-    @Test
+    @Test(groups = {"smoke"})
     public void validateStringContainsTest() {
         String fullText = "Welcome to Selenium Automation";
         String expectedText = "Selenium";
