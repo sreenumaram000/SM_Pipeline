@@ -15,17 +15,17 @@ public class TestClass1 {
 
     WebDriver driver;
 
-    @BeforeMethod
-    public void setUp() {
-    	ChromeOptions options = new ChromeOptions();
-    	options.addArguments("--headless=new");
-    	options.addArguments("--no-sandbox");
-    	options.addArguments("--disable-dev-shm-usage");
-
-    	WebDriverManager.chromedriver().setup();
-    	WebDriver driver = new ChromeDriver(options);
-        driver.get("https://www.google.com");
-    }
+//    @BeforeMethod
+//    public void setUp() {
+//    	ChromeOptions options = new ChromeOptions();
+//    	options.addArguments("--headless=new");
+//    	options.addArguments("--no-sandbox");
+//    	options.addArguments("--disable-dev-shm-usage");
+//
+//    	WebDriverManager.chromedriver().setup();
+//    	WebDriver driver = new ChromeDriver(options);
+//        driver.get("https://www.google.com");
+//    }
 
     @Test
     public void validateStringEqualityTest() {
@@ -51,10 +51,10 @@ public class TestClass1 {
         Assert.assertNotNull(name, "String value is null");
     }
 
-    @AfterMethod
-    public void tearDown() {
-        if (driver != null) {
-            driver.quit();
-        }
-    }
+//    @AfterMethod
+//    public void tearDown() {
+//        if (driver != null) {
+//            driver.quit();
+//        }
+//    }
 }
