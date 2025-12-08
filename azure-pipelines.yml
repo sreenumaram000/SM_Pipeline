@@ -6,6 +6,12 @@
 trigger:
 - master
 
+parameters:
+- name: GroupName
+  displayName: "Test Group to Run"
+  type: string
+  default: "smoke"
+
 pool:
   vmImage: ubuntu-latest
 
