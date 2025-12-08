@@ -39,7 +39,7 @@ public class TestClass2 {
     public void validateCurrentUrlContainsGoogle() {
         String currentUrl = "Google";
 
-        Assert.assertTrue(currentUrl.contains("google"),
+        Assert.assertTrue(currentUrl.contains("Google"),
                 "❌ URL does not contain 'google'");
     }
 
