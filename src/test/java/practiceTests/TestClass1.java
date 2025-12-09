@@ -37,7 +37,7 @@ public class TestClass1 {
 
     @Test(groups = {"smoke"})
     public void validateStringContainsTest() {
-        String fullText = "Welcome to Selenium Automation";
+        String fullText = "Wel111come to Selenium Automation";
         String expectedText = "Selenium";
 
         Assert.assertTrue(fullText.contains(expectedText),
