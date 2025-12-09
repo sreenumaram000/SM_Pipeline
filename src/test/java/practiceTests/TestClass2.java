@@ -32,7 +32,7 @@ public class TestClass2 {
         String expectedTitle = "Google";
 
         Assert.assertEquals(actualTitle, expectedTitle,
-                "❌ Page title does not match");
+                "Page title does not match");
     }
 
     @Test
@@ -40,7 +40,7 @@ public class TestClass2 {
         String currentUrl = "Google";
 
         Assert.assertTrue(currentUrl.contains("Google"),
-                "❌ URL does not contain 'google'");
+                "URL does not contain 'google'");
     }
 
     @Test
@@ -51,15 +51,15 @@ public class TestClass2 {
 
         // contains
         Assert.assertTrue(actualText.contains(expectedSubstring),
-                "❌ Expected substring not found");
+                " Expected substring not found");
 
         // startsWith
         Assert.assertTrue(actualText.startsWith("Selenium"),
-                "❌ String does not start with Selenium");
+                " String does not start with Selenium");
 
         // length validation
         Assert.assertTrue(actualText.length() > 10,
-                "❌ String length validation failed");
+                " String length validation failed");
     }
 
     @AfterClass
